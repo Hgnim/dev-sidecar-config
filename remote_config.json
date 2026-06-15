@@ -3,7 +3,7 @@
     "startShowWindow": false,
     "remoteConfig": {
       "url": "https://raw.giteeusercontent.com/wangliang181230/dev-sidecar-config/raw/main/remote_config.json",
-      "personalUrl": "https://github.com/Hgnim/dev-sidecar-config/raw/refs/heads/main/remote_config.json"
+      "personalUrl": "https://raw.githubusercontent.com/Hgnim/dev-sidecar-config/refs/heads/main/remote_config.json"
     }
     //配置编辑时间、版本信息
     "metaInfo": {
