@@ -1,8 +1,10 @@
 {
   "app": {
+    "startShowWindow": false,
     "remoteConfig": {
-      "url": "https://raw.giteeusercontent.com/wangliang181230/dev-sidecar-config/raw/main/remote_config.json"
-    },
+      "url": "https://raw.giteeusercontent.com/wangliang181230/dev-sidecar-config/raw/main/remote_config.json",
+      "personalUrl": "https://github.com/Hgnim/dev-sidecar-config/raw/refs/heads/main/remote_config.json"
+    }
     //配置编辑时间、版本信息
     "metaInfo": {
       // 元数据就放在这里了
@@ -24,12 +26,14 @@
     "intercepts": {
       // github相关
       "github.com": {
+        /*
         "^(/[^/]+){2,}/?(\\?.*)?$": {
           "tampermonkeyScript": "https://raw.giteeusercontent.com/wangliang181230/dev-sidecar-config/raw/main/tampermonkey.js",
           "script": "https://raw.giteeusercontent.com/wangliang181230/dev-sidecar-config/raw/main/GithubEnhanced-High-Speed-Download.user.js",
           "remark": "注：上面所使用的脚本地址，为高速镜像地址。",
           "desc": "油猴脚本：高速下载 Git Clone/SSH、Release、Raw、Code(ZIP) 等文件 (公益加速)、项目列表单文件快捷下载、添加 git clone 命令"
         },
+        */
         "^(/[\\w-.]+){2,}/?(\\?.*)?$": null,
         // 以下配置会导致私有(private)仓库中的图片无法加载，因为需要有一个token参数，无法在DS中生成，暂不配置
         //"^((/[^/]+){2})/raw/(refs/heads/)?(.*)$": {
@@ -1106,6 +1110,16 @@
   },
   "help": {
     "dataList": [
+      {
+        "title":"Hgnim的配置",
+        "rowClass":"title1",
+        "children":[
+          {
+            "title":"https://github.com/Hgnim/dev-sidecar-config",
+            "url":"https://github.com/Hgnim/dev-sidecar-config"
+          }
+        ]
+      },
       {
         "title": "〇、远程配置说明",
         "rowClass": "title1",
