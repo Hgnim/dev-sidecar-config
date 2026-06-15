@@ -1,3 +1,6 @@
+> [!NOTE]
+> 目前测试失败，原因暂且未知
+
 # dev-sidecar-config
 
 软件地址：https://github.com/docmirror/dev-sidecar
